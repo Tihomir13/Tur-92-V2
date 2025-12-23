@@ -1,20 +1,46 @@
 :root {
   --primary-color: #eab308;
-  --secondary-color: #FFF7ED;
+  --secondary-color: #fff7ed;
+  --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-section, footer {
+section,
+footer {
   margin-top: 100px;
 }
 
 .first-section {
-    padding: 100px 0px;
-    background-color: var(--secondary-color);
+  padding: 100px 0px;
+  background-color: var(--secondary-color);
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.header {
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0px;
+  padding: 10px;
+  background-color: white;
+
+  &.shadow {
+    box-shadow: var(--shadow);
+    /* background-color: var(--primary-color); */
+  }
+
+  .logo-container {
+    max-width: 250px;
+    .logo-image {
+      width: 100%;
+    }
+  }
 }
 
 .crane-container {
   border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--shadow);
   max-width: 380px;
   padding: 0px;
 
@@ -69,13 +95,24 @@ section, footer {
 .services-section {
   padding: 0px 160px;
 }
+/* main {
+  padding: 0px 20px;
+} */
 
 @media (max-width: 768px) {
-  main {
-    padding: 0px 20px;
+  .services-section {
+    padding: 20px;
   }
 
-  .services-section {
-    padding: 0px;
+  .autocrane-section {
+    padding: 0px 20px;
+
+    .phone-btn-container {
+      padding: 0px 0px;
+    }
+  }
+
+  .phone-btn-container {
+    padding: 0px 50px;
   }
 }

@@ -13,19 +13,23 @@
     />
 
     <link rel="stylesheet" href="styles/main.css" />
+    
   </head>
+  <script defer src="script.js"></script>
   <body>
-    <header>
-      <div class="d-flex justify-content-between">
-        <nav class="col-md-6 px-0">LOGO</nav>
+    <header class="header container-fluid">
+      <div class="d-flex justify-content-md-between justify-content-center">
+        <div class="logo-container">
+          <img class="logo-image" src="assets/images/Logo-1.png" alt="Лого на фирмата">
+        </div>
 
-        <div class="col-md-6 px-0">
+        <!-- <div class="col-md-6 px-0">
           <p>
-            <a class="text-decoration-none" href="tel:+359889328488">
-              +359 88 932 8488
+            <a class="text-decoration-none" href="tel:0888769047">
+              0888769047
             </a>
           </p>
-        </div>
+        </div> -->
       </div>
     </header>
 
@@ -38,17 +42,24 @@
           <div class="phone-btn-container mt-2 d-flex justify-content-center">
             <a
             class="text-decoration-none phone-container w-auto"
-            href="tel:+359889328488"
+            href="tel:+359888769047"
             aria-label="Обади се за автокран под наем"
             >
             <img class="mx-2" src="assets/icons/phone-white.svg" alt="Икона за телефон">
-            Обадете се сега: +359 88 932 8488
+            <div class="d-flex flex-column flex-md-row">
+              <span>
+                Обадете се сега:
+              </span> 
+              <span>
+                +359 88 876 9047
+              </span>
+            </div>
           </a>
         </div>
       </section>
 
-      <section>
-        <h2 class="text-center mb-4">Автокранове</h2>
+      <section class="autocrane-section">
+        <h2 class="fs-1 text-center mb-4">Автокранове</h2>
 
         <div class="row gap-4 m-0 p-0 justify-content-center">
           <div class="crane-container">
@@ -81,11 +92,11 @@
               <div class="phone-btn-container mt-2 d-flex justify-content-center">
                 <a
                   class="text-decoration-none phone-container"
-                  href="tel:+359889328488"
+                  href="tel:+359888769047"
                   aria-label="Обади се за автокран под наем"
                 >
                 <img class="mx-2" src="assets/icons/phone-white.svg" alt="Икона за телефон">
-                  +359 88 932 8488
+                  +359 88 876 9047
                 </a>
               </div>
             </div>
@@ -94,9 +105,9 @@
       </section>
 
       <section class="services-section">
-        <h2 class="text-center mb-4">Какво предлагаме</h2>
+        <h2 class="fs-1 text-center mb-5">Какво предлагаме</h2>
 
-        <div class="row">
+        <div class="row gap-3 gap-lg-0">
           <div class="col-12 col-md-3 d-flex flex-column">
             <div class="d-flex justify-content-center align-items-center">
               <img src="assets/icons/1.svg" alt="">
@@ -145,7 +156,7 @@
     <footer class="contaienr-fluid footer bg-dark text-white pt-4 pb-3">
   <div class="container">
     <div class="row">
-      <div class="col-xxl-4 d-flex flex-column gap-3 mb-5">
+      <div class="col-lg-4 d-flex flex-column gap-3 mb-5">
         <article>
             <h2 class="text-center">За нас</h2>
             <p class="text-md-start text-center text-light text-opacity-75">
@@ -157,7 +168,7 @@
         </article>
       </div>
 
-      <div class="col-xxl-4 align-items-center d-flex flex-column gap-3 mb-5">
+      <div class="col-lg-4 align-items-center d-flex flex-column gap-3 mb-5">
         <h2 class="text-center">Работно време</h2>
 
         <div class="d-flex flex-md-row flex-column align-items-center gap-2">
@@ -166,7 +177,7 @@
         </div>
       </div>
 
-      <div class="col-xxl-4 d-flex flex-column justify-content-center align-items-center gap-3">
+      <div class="col-lg-4 d-flex flex-column align-items-center gap-3">
         <h2 class="text-center">Контакти</h2>
         <address>
           <ul class="list-unstyled d-flex flex-column gap-3">
@@ -185,11 +196,11 @@
             </li>
 
             <li class="d-flex flex-md-row flex-column align-items-center gap-2">
-              <img class="icon me-2" src="assets/icons/phone-white.svg" alt="phone image" />
+              <img class="icon me-2" src="assets/icons/phone-yellow.svg" alt="phone image" />
 
               <a
-                class="text-primary fw-bold fs-5 mb-0 link"
-                href="tel: 0888769047"
+                class="text-primary fw-bold fs-5 mb-0 text-decoration-none"
+                href="tel: +359888769047"
                 >+359 88 876 9047</a
               >
             </li>
@@ -208,7 +219,7 @@
 
     <div class="row mt-3">
       <div class="col-12 text-center text-secondary text-opacity-50">
-        <span>&copy; 2025 Тур-92. Всички права запазени.</span>
+        <span>&copy; <span class="year"></span> Тур-92. Всички права запазени.</span>
       </div>
     </div>
   </div>
