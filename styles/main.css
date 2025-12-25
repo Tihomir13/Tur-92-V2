@@ -12,6 +12,11 @@ footer {
 .first-section {
   padding: 100px 0px;
   background-color: var(--secondary-color);
+  z-index: 10;
+  /* background-image: url('../assets/images/Tarnovo.jpeg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  filter: brightness(30%) !important; */
 }
 
 .text-primary {
