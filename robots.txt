@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://avtokran-veliko-tarnovo.netlify.app/sitemap.xml
