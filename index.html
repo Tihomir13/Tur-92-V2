@@ -11,7 +11,15 @@
     <link rel="dns-prefetch" href="https://www.google.com" />
     <link rel="dns-prefetch" href="https://www.google.com/maps" />
 
+    <!-- Preload LCP Image (Logo) -->
+    <link rel="preload" href="assets/images/Logo-2.webp" as="image" />
+
     <!-- Bootstrap CSS -->
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      as="style"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -59,7 +67,6 @@
     <!-- Stylesheets -->
     <link rel="preload" href="styles/main.min.css" as="style" />
     <link rel="stylesheet" href="styles/main.min.css" />
-    <link rel="preload" href="assets/images/Logo-2.webp" as="image" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="canonical" href="https://avtokran-veliko-tarnovo.pages.dev/" />
 
@@ -214,11 +221,14 @@
           <img
             class="logo-image"
             src="assets/images/Logo-2.webp"
+            srcset="assets/images/Logo-2.webp 300w"
+            sizes="(max-width: 768px) 250px, 300px"
             alt="Тур 92 - Автокран под наем Велико Търново"
             width="300"
             height="94"
             loading="eager"
             fetchpriority="high"
+            decoding="async"
           />
         </div>
 
@@ -271,10 +281,13 @@
               <img 
                 class="image" 
                 src="assets/images/20251230_110228.webp" 
+                srcset="assets/images/20251230_110228.webp 380w"
+                sizes="(max-width: 768px) 100vw, 380px"
                 alt="Автокран 16 тона под наем във Велико Търново - Тур 92" 
                 width="380"
                 height="250"
                 loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -338,10 +351,13 @@
               <img 
                 class="image" 
                 src="assets/images/20251230_110321.webp" 
+                srcset="assets/images/20251230_110321.webp 380w"
+                sizes="(max-width: 768px) 100vw, 380px"
                 alt="Автокран 30 тона под наем във Велико Търново - Тур 92" 
                 width="380"
                 height="250"
                 loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -405,10 +421,13 @@
               <img 
                 class="image" 
                 src="assets/images/20251230_110516.webp" 
+                srcset="assets/images/20251230_110516.webp 380w"
+                sizes="(max-width: 768px) 100vw, 380px"
                 alt="Автокран 35 тона под наем във Велико Търново - Тур 92" 
                 width="380"
                 height="250"
                 loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -580,6 +599,7 @@
               title="Карта – Тур-92 Велико Търново, Южна промишлена зона, Дълга Лъка"
               referrerpolicy="no-referrer-when-downgrade"
               aria-label="Интерактивна карта показваща местоположението на Тур-92 във Велико Търново"
+              fetchpriority="low"
             ></iframe>
           </div>
         </div>

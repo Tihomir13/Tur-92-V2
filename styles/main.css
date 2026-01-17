@@ -37,6 +37,7 @@ footer {
   top: 0px;
   padding: 10px;
   background-color: white;
+  will-change: box-shadow;
 
   &.shadow {
     box-shadow: var(--shadow);
@@ -45,6 +46,12 @@ footer {
 
   .logo-container {
     max-width: 250px;
+    
+    .logo-image {
+      max-width: 100%;
+      height: auto;
+      width: auto;
+    }
   }
 }
 
@@ -60,7 +67,10 @@ footer {
     .image {
       object-fit: cover;
       width: 100%;
+      max-width: 380px;
       max-height: 250px !important;
+      height: auto;
+      aspect-ratio: 380 / 250;
       border-radius: 12px 12px 0px 0px !important;
     }
   }
@@ -117,7 +127,7 @@ footer {
     justify-content: center;
     align-items: center;
     color: white;
-    transition: all 0.3s;
+    transition: filter 0.3s ease;
 
     border-radius: 12px;
     width: 100%;
