@@ -45,9 +45,6 @@ footer {
 
   .logo-container {
     max-width: 250px;
-    .logo-image {
-      width: 100%;
-    }
   }
 }
 
@@ -78,6 +75,13 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
+      
+      img {
+        max-width: 28px;
+        max-height: 28px;
+        width: auto;
+        height: auto;
+      }
     }
   }
 }
